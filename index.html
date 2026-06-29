@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aprende Inglés con Profe Caimán</title>
+  <meta name="description" content="Plataforma web educativa para apoyar el aprendizaje básico del idioma inglés con abecedario, números, pronombres, verbos, recursos visuales y juegos interactivos." />
+  <meta name="theme-color" content="#1b5e45" />
+  <link rel="icon" href="caiman-icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO / NAVEGACIÓN ===== -->
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Inicio — Profe Caimán">
+        <img src="caiman-logo.png" alt="Logo caimán" />
+        <div class="brand-text">
+          Profe Caimán
+          <span>Aprende inglés</span>
+        </div>
+      </a>
+      <div class="main-nav">
+        <a href="#abecedario">Abecedario</a>
+        <a href="#numeros">Números</a>
+        <a href="#pronombres">Pronombres</a>
+        <a href="#verbos">Verbos</a>
+        <a href="#videos">Videos</a>
+        <a href="#juegos">🎮 Juegos</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main id="inicio">
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="sticker-tab" aria-hidden="true"><span class="dot"></span> Bienvenido</div>
+          <h1 id="hero-heading">
+            Aprende <em>inglés</em><br>con Profe Caimán
+          </h1>
+          <p class="lead">
+            Abecedario, números del 1 al 100, pronombres, 50 verbos — todo en inglés y español.
+            Y cuando ya practiques lo básico, ¡pon a prueba lo aprendido con nuestros 3 juegos!
+          </p>
+          <div class="hero-actions">
+            <a href="#abecedario" class="btn btn-primary">📖 Empezar a aprender</a>
+            <a href="#juegos" class="btn btn-ghost">🎮 Ir a los juegos</a>
+          </div>
+        </div>
+        <div class="hero-figure" aria-hidden="true">
+          <div class="speech-bubble">¡Let's go! Vamos a aprender… si quieren. 😏</div>
+          <img src="caiman-mascot.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- olas decorativas -->
+    <svg class="water-divider" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" />
+    </svg>
+
+    <!-- ===== ABECEDARIO ===== -->
+    <section id="abecedario" class="topic" aria-labelledby="abc-heading">
+      <div class="container">
+        <div class="topic-head">
+          <div class="sticker-tab" aria-hidden="true"><span class="dot"></span> A–Z</div>
+          <h2 id="abc-heading">El Abecedario en inglés</h2>
+          <p>26 letras, 26 palabras. Haz clic en cada tarjeta para ver la traducción al español.</p>
+        </div>
+        <p class="section-tip" role="note">
+          💡 <strong>Tip:</strong> En inglés, la letra se llama igual que la palabra más corta que la represente.
+          ¡Practica pronunciando la letra Y luego la palabra!
+        </p>
+        <div id="alphabet-grid" class="alphabet-grid" role="list" aria-label="Tarjetas del abecedario">
+          <!-- generado por JS -->
+        </div>
+        <p class="flip-hint" aria-hidden="true">👆 Toca una tarjeta para ver la traducción</p>
+      </div>
+    </section>
+
+    <!-- ===== NÚMEROS ===== -->
+    <section id="numeros" class="topic" aria-labelledby="num-heading">
+      <div class="container">
+        <div class="topic-head">
+          <div class="sticker-tab alt" aria-hidden="true"><span class="dot"></span> 1 – 100</div>
+          <h2 id="num-heading">Números del 1 al 100</h2>
+          <p>Selecciona una decena para explorar los números. Cada tarjeta muestra el número, su nombre en inglés y en español.</p>
+        </div>
+        <p class="section-tip" role="note">
+          💡 <strong>Tip:</strong> Del 13 al 19 llevan el sufijo <strong>-teen</strong> (thirteen, fourteen…).
+          Del 20 en adelante, las decenas van primero separadas por guion: <em>twenty-one, thirty-two…</em>
+        </p>
+        <div id="decade-tabs" class="decade-tabs" role="tablist" aria-label="Decenas">
+          <!-- generado por JS -->
+        </div>
+        <div id="numbers-grid" class="numbers-grid" aria-live="polite">
+          <!-- generado por JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRONOMBRES ===== -->
+    <section id="pronombres" class="topic" aria-labelledby="pron-heading">
+      <div class="container">
+        <div class="topic-head">
+          <div class="sticker-tab" aria-hidden="true"><span class="dot"></span> Pronombres</div>
+          <h2 id="pron-heading">Pronombres en inglés</h2>
+          <p>La tabla cubre pronombres de sujeto, objeto, adjetivos posesivos y pronombres posesivos — con su equivalente en español.</p>
+        </div>
+        <p class="section-tip" role="note">
+          💡 <strong>Tip:</strong> En inglés <em>"you"</em> sirve tanto para <em>tú</em> como para <em>usted</em>.
+          El contexto indica el nivel de formalidad.
+        </p>
+        <div class="table-wrap">
+          <table aria-label="Tabla de pronombres en inglés y español">
+            <thead>
+              <tr>
+                <th scope="col">Persona</th>
+                <th scope="col">Sujeto</th>
+                <th scope="col">Objeto</th>
+                <th scope="col">Adjetivo posesivo</th>
+                <th scope="col">Pronombre posesivo</th>
+              </tr>
+            </thead>
+            <tbody id="pronouns-body">
+              <!-- generado por JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VERBOS ===== -->
+    <section id="verbos" class="topic" aria-labelledby="verb-heading">
+      <div class="container">
+        <div class="topic-head">
+          <div class="sticker-tab alt" aria-hidden="true"><span class="dot"></span> 50 Verbos</div>
+          <h2 id="verb-heading">50 verbos — presente y pasado</h2>
+          <p>Los verbos más usados del inglés cotidiano, con su forma pasada y traducción al español.</p>
+        </div>
+        <p class="section-tip" role="note">
+          💡 <strong>Tip:</strong> Los verbos <span class="tag regular" style="font-size:0.8rem">Regular</span> forman el pasado agregando <strong>-ed</strong>.
+          Los <span class="tag irregular" style="font-size:0.8rem">Irregular</span> cambian de forma — ¡hay que memorizarlos!
+        </p>
+        <div class="verb-search">
+          <label for="verb-search" class="visually-hidden">Buscar verbo</label>
+          <input type="search" id="verb-search" placeholder="🔍 Buscar: go, ir, went…" aria-label="Buscar verbo en inglés o español" />
+          <span class="verb-count" id="verb-count" aria-live="polite"></span>
+        </div>
+        <div class="table-wrap">
+          <table aria-label="Tabla de 50 verbos en inglés con su pasado y traducción al español">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Presente (base)</th>
+                <th scope="col">Pasado</th>
+                <th scope="col">Español</th>
+                <th scope="col">Tipo</th>
+              </tr>
+            </thead>
+            <tbody id="verbs-body" aria-live="polite">
+              <!-- generado por JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== RECURSOS EN VIDEO ===== -->
+    <section id="videos" class="topic" aria-labelledby="videos-heading">
+      <div class="container">
+        <div class="topic-head">
+          <div class="sticker-tab alt" aria-hidden="true"><span class="dot"></span> Videos</div>
+          <h2 id="videos-heading">Recursos de video para reforzar</h2>
+          <p>Enlaces de apoyo para practicar pronunciación, vocabulario y verbos fuera del aula.</p>
+        </div>
+        <div class="video-grid" role="list" aria-label="Enlaces a videos educativos de inglés">
+          <a class="video-card" href="https://www.youtube.com/results?search_query=english+alphabet+pronunciation+for+beginners" target="_blank" rel="noopener noreferrer" role="listitem">
+            <span aria-hidden="true">🔤</span>
+            <strong>Abecedario y pronunciación</strong>
+            <small>Buscar videos para practicar A–Z.</small>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/results?search_query=numbers+1+to+100+in+english+for+beginners" target="_blank" rel="noopener noreferrer" role="listitem">
+            <span aria-hidden="true">🔢</span>
+            <strong>Números del 1 al 100</strong>
+            <small>Practicar escritura y pronunciación.</small>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/results?search_query=english+subject+pronouns+object+pronouns+beginners" target="_blank" rel="noopener noreferrer" role="listitem">
+            <span aria-hidden="true">👥</span>
+            <strong>Pronombres básicos</strong>
+            <small>Repasar sujeto, objeto y posesivos.</small>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/results?search_query=regular+and+irregular+verbs+past+simple+for+beginners" target="_blank" rel="noopener noreferrer" role="listitem">
+            <span aria-hidden="true">⏰</span>
+            <strong>Verbos en pasado</strong>
+            <small>Diferenciar regulares e irregulares.</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== JUEGOS ===== -->
+    <section id="juegos" class="topic" aria-labelledby="games-heading">
+      <div class="container">
+        <div class="topic-head games-intro">
+          <div class="sticker-tab" aria-hidden="true"><span class="dot"></span> Juegos</div>
+          <h2 id="games-heading">¡Pon a prueba lo que aprendiste!</h2>
+          <p>Tres juegos didácticos para practicar números, vocabulario y verbos. ¡Elige uno y a jugar!</p>
+        </div>
+
+        <!-- Selector de juegos -->
+        <div class="game-picker" role="list">
+
+          <!-- Juego 1 -->
+          <div class="game-cartridge" data-game="game-numbers" role="listitem">
+            <div class="emoji" aria-hidden="true">🔢</div>
+            <h3>Quiz de Números</h3>
+            <p>Se muestra un número en español — ¡escoge la opción correcta en inglés! 8 rondas por partida.</p>
+            <button class="btn btn-primary" type="button">Jugar ahora</button>
+          </div>
+
+          <!-- Juego 2 -->
+          <div class="game-cartridge" data-game="game-memory" role="listitem">
+            <div class="emoji" aria-hidden="true">🃏</div>
+            <h3>Memorama EN–ES</h3>
+            <p>Encuentra los pares de pronombres y palabras básicas: inglés con su traducción al español.</p>
+            <button class="btn btn-primary" type="button">Jugar ahora</button>
+          </div>
+
+          <!-- Juego 3 -->
+          <div class="game-cartridge" data-game="game-tense" role="listitem">
+            <div class="emoji" aria-hidden="true">⏰</div>
+            <h3>¿Cuál es el pasado?</h3>
+            <p>Se muestra un verbo en presente — escribe su forma pasada correcta. ¡Cuidado con los irregulares!</p>
+            <button class="btn btn-primary" type="button">Jugar ahora</button>
+          </div>
+
+        </div>
+
+        <!-- ── Escenario: Quiz de Números ── -->
+        <div id="game-numbers" class="game-stage" role="region" aria-label="Juego: Quiz de números">
+          <div class="game-stage-head">
+            <h3>🔢 Quiz de Números</h3>
+            <span class="game-score" id="numbers-score" aria-live="polite">Puntos: 0 / 8</span>
+            <button class="close-game" type="button" aria-label="Cerrar juego">✕ Cerrar</button>
+          </div>
+          <div class="progress-bar" aria-hidden="true">
+            <div class="progress-bar-fill" id="numbers-progress-fill" style="width:0%"></div>
+          </div>
+          <div class="game-body" aria-live="polite">
+            <!-- generado por JS -->
+          </div>
+        </div>
+
+        <!-- ── Escenario: Memorama ── -->
+        <div id="game-memory" class="game-stage" role="region" aria-label="Juego: Memorama">
+          <div class="game-stage-head">
+            <h3>🃏 Memorama EN–ES</h3>
+            <span class="game-score" aria-live="polite">
+              Parejas: <span id="memo-matches-head">0 / 8</span>
+            </span>
+            <button class="close-game" type="button" aria-label="Cerrar juego">✕ Cerrar</button>
+          </div>
+          <div class="game-body">
+            <div id="memo-grid" class="memo-grid" role="grid" aria-label="Tablero del memorama">
+              <!-- generado por JS -->
+            </div>
+            <div class="memo-stats" aria-live="polite">
+              <span>Intentos: <strong id="memo-moves">0</strong></span>
+              <span>Parejas: <strong id="memo-matches-stats">0 / 8</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Escenario: ¿Cuál es el pasado? ── -->
+        <div id="game-tense" class="game-stage" role="region" aria-label="Juego: Pasado de verbos">
+          <div class="game-stage-head">
+            <h3>⏰ ¿Cuál es el pasado?</h3>
+            <span class="game-score" aria-live="polite">Puntos: 0 / 8</span>
+            <button class="close-game" type="button" aria-label="Cerrar juego">✕ Cerrar</button>
+          </div>
+          <div class="progress-bar" aria-hidden="true">
+            <div class="progress-bar-fill" id="tense-progress-fill" style="width:0%"></div>
+          </div>
+          <div class="game-body" aria-live="polite">
+            <!-- generado por JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="site-footer">
+    <img src="caiman-icon.png" alt="Caimán logo" />
+    <p>© <span id="year"></span> Profe Caimán · Aprende inglés con estilo 🐊</p>
+    <p style="opacity:0.6; font-size:0.8rem;">Hecho con HTML5, CSS3 y JavaScript puro.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+PROFE CAIMÁN — PROYECTO CORREGIDO
+
+Diagnóstico del error visto en la captura:
+1) El archivo .vscode/launch.json intentaba abrir http://localhost:8080, pero Live Server estaba trabajando en el puerto 5500.
+2) La configuración usaba type: "chrome", que puede fallar en versiones actuales de Visual Studio Code. Se cambió a type: "pwa-chrome" y se creó un perfil aislado de Chrome para evitar conflictos con sesiones abiertas.
+3) index.html llamaba a css/style.css y js/script.js, pero los archivos estaban en la raíz. Se reorganizó la carpeta para que las rutas existan.
+4) Faltaba la carpeta assets con las imágenes del caimán usadas en el HTML. Se extrajeron y optimizaron las imágenes del documento del proyecto.
+5) Había un ID duplicado en el memorama. Se corrigió para evitar conflictos en JavaScript.
+
+Cómo abrir correctamente:
+Opción recomendada:
+1. Abre la carpeta cocodrile_modificado en Visual Studio Code.
+2. Instala o activa la extensión Live Server.
+3. Haz clic derecho sobre index.html.
+4. Selecciona "Open with Live Server".
+5. Debe abrirse en: http://127.0.0.1:5500/index.html
+
+Opción con depuración:
+1. En Visual Studio Code entra a Run and Debug.
+2. Selecciona "Abrir Profe Caimán con Live Server".
+3. Ejecuta con F5.
+
+Opción rápida sin servidor:
+1. Haz doble clic en index.html o usa en VS Code la configuración "Abrir index.html directo".
+
+Archivos principales modificados:
+- index.html
+- css/style.css
+- js/script.js
+- .vscode/launch.json
+- .vscode/settings.json
+- assets/ imágenes del caimán y logo del colegio
+
+
+ACTUALIZACIÓN - VERSIÓN EN UNA SOLA CARPETA
+-------------------------------------------
+Esta versión fue reorganizada para que no existan subcarpetas internas.
+Todos los archivos están en la misma carpeta:
+- index.html
+- style.css
+- script.js
+- imágenes .png/.jpeg
+- launch.json y settings.json como respaldo de configuración
+
+Forma recomendada de abrir:
+1) Extrae el ZIP.
+2) Abre la carpeta cocodrile_una_sola_carpeta en Visual Studio Code.
+3) Clic derecho sobre index.html.
+4) Selecciona Open with Live Server.
+
+También puedes abrir index.html directamente en Google Chrome.
